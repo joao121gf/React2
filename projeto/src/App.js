@@ -1,31 +1,18 @@
-import React, { useState } from "react";
-import Ex001 from "./exercicios/ex001";
-
-function Header() {
-  return <h1>Bem-vindo ao React!</h1>;
-}
-function Desc() {
-  return <p>Essa é a descrição da nossa empresa</p>;
-}
-
-function Button(props) {
-  return <p>Bem vindo senhor {props.name}, voce gostaria de reservar um Curriculo na nossa empresa?</p>;
-}
+import React from "react";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
+  function sum(a, b) {
+    return a + b;
+  }
+  const name = "João";
+  const url = "https://placehold.co/400";
   return (
     <>
-      <Header />
-      <Desc />
-      <Button name="João Giovani"></Button>
-      <div>
-        <h1>Contador: {count}</h1>
-        <button onClick={() => setCount(count + 1)}> Adcionar </button>
-        <button onClick={() => setCount(count - 1)}> Subtrair </button>
+      <div className="app">
+        <h1>Olá {sum(2, 1)}</h1>
+        <img src={url} alt="minha imagem" />
       </div>
-      <Ex001 name="Arthur"></Ex001>
     </>
   );
 }
+ 
