@@ -25,7 +25,7 @@ export default function App() {
         <button onClick={() => setCount(count + 1)}> Adcionar </button>
         <button onClick={() => setCount(count - 1)}> Subtrair </button>
       </div>
-      <Ex001></Ex001>
+      <Ex001 name="Arthur"></Ex001>
     </>
   );
 }
