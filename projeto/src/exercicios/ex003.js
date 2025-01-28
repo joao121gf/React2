@@ -22,6 +22,7 @@ export default function Ex003() {
   return (
     <>
       <h1>Exercício 3</h1>
+      <h2>Contador cujo o máximo é 10 e o minimo é 0</h2>
       <h3>{count}</h3>
       {count === numberMax && <p>{mensagem} (Máximo)</p>}
       {count === numberMin && <p>{mensagem} (Mínimo)</p>}
