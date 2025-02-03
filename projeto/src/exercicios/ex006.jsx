@@ -13,6 +13,7 @@ export default function Ex006() {
       <div className="bckg" style={{ backgroundColor: mudaTema }}>
         <h3 style={{ color: mudaTema === "white" ? "black" : "white" }}>Exercício: Alternador de Tema</h3>
         <button onClick={mudaCor}>Mudar Tema</button>
+        <hr />
       </div>
     </>
   );
