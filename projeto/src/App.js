@@ -5,6 +5,8 @@ import Ex004 from "./exercicios/ex004";
 import Ex005 from "./exercicios/ex005";
 import Ex006 from "./exercicios/ex006";
 import Ex007 from "./exercicios/ex007";
+import Ex008 from "./exercicios/ex008";
+import Ex009 from "./exercicios/ex009";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
       <Ex005></Ex005>
       <Ex006></Ex006>
       <Ex007></Ex007>
+      <Ex008></Ex008>
+      <Ex009></Ex009>
     </>
   );
 }

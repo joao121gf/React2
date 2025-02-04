@@ -19,6 +19,7 @@ export default function Ex007() {
       <input type="text" placeholder="Nome do produto" name="nomeP" onChange={handleChange} value={inputValue} />
       <button onClick={adcionarItem}>Adcionar</button>
       <button onClick={() => alert(prod.join(", "))}>Ver Lista</button>
+      <hr />
     </>
   );
 }
