@@ -7,18 +7,12 @@ import Ex006 from "./exercicios/ex006";
 import Ex007 from "./exercicios/ex007";
 import Ex008 from "./exercicios/ex008";
 import Ex009 from "./exercicios/ex009";
+import Pj001 from "./projetos/pj001";
 
 export default function App() {
   return (
     <>
-      <Comps></Comps>
-      <Ex003></Ex003>
-      <Ex004></Ex004>
-      <Ex005></Ex005>
-      <Ex006></Ex006>
-      <Ex007></Ex007>
-      <Ex008></Ex008>
-      <Ex009></Ex009>
+      <Pj001></Pj001>
     </>
   );
 }
