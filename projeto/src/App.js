@@ -8,6 +8,7 @@ import Ex007 from "./exercicios/ex007";
 import Ex008 from "./exercicios/ex008";
 import Ex009 from "./exercicios/ex009";
 import Pj001 from "./projetos/pj001";
+import Ex010 from "./exercicios/ex010";
 
 export default function App() {
   return (
