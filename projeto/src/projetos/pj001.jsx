@@ -2,6 +2,7 @@ import React, { useState } from "react";
 export default function Pj001() {
   const [addTask, setAddTask] = useState([]);
   const [pullInput, setPullInput] = useState("");
+  const [feitas, setFeitas] = useState([])
 
   let funcInput = (event) => {
     setPullInput(event.target.value);
@@ -24,6 +25,9 @@ export default function Pj001() {
   let removeItem = (itemToRemove) => {
     setAddTask((remov) => [...remov.filter((item) => item != itemToRemove)]);
   };
+  let taskFeita = (taskFiltrar) =>{
+    setFeitas((prevFeitas) => [...prevFeitas, taskFiltrar])
+  }
 
   return (
     <>
@@ -51,7 +55,7 @@ export default function Pj001() {
               {addTask.map((item, index) => (
                 <li key={index}>
                   {item} <button onClick={() => removeItem(item)}>Remover</button>
-                  <button className="feita">Marcar como feita</button>
+                  {item} <button className="feita" onClick={() => taskFeita(item)}>Marcar como feita</button>
                 </li>
               ))}
             </ul>
@@ -60,6 +64,7 @@ export default function Pj001() {
             <h2>Todas tarefas</h2>
             <h2>Pendentes</h2>
             <h2>Concluidas</h2>
+            <h3>{feitas}</h3>
           </div>
         </div>
       </div>
