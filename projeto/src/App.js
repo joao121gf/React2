@@ -11,10 +11,11 @@ import Pj001 from "./projetos/pj001";
 import Ex010 from "./exercicios/ex010";
 import Pj002 from "./projetos/pj002";
 import Ex011 from "./exercicios/ex011";
+import Ex012 from "./exercicios/ex012";
 export default function App() {
   return (
     <>
-      <Ex011></Ex011>
+      <Ex012></Ex012>
     </>
   );
 }

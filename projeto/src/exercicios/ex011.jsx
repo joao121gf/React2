@@ -1,31 +1,29 @@
-import React, { useEffect, useState } from "react";
-
+import React, { use, useCallback, useEffect, useState } from "react";
 export default function Ex011() {
-  const [cont, setCont] = useState(() => {
-    // Inicializa diretamente com o valor do localStorage, se disponível
-    const savedValue = localStorage.getItem("myItem");
-    return savedValue ? Number(savedValue) : 0; // Se houver valor no localStorage, usa-o, caso contrário, inicia com 0
+  const [estado, setEstado] = useState(() => {
+    const saved = localStorage.getItem("myItem");
+    return saved !== null ? Number(saved) : 0;
   });
-
-  const addBtn = () => {
-    setCont(cont + 1);
-  };
-
-  const removeBtn = () => {
-    setCont(cont - 1);
-  };
-
-  // Salvando no localStorage sempre que 'cont' mudar
   useEffect(() => {
-    localStorage.setItem("myItem", cont);
-  }, [cont]);
+    localStorage.setItem("myItem", estado);
+  }, [estado]);
+  let addBtn = useCallback(() => {
+    setEstado((prev) => prev + 1);
+  });
+  let removeBtn = useCallback(() => {
+    setEstado((prev) => prev - 1);
+  });
+  let resetBtn = useCallback(() => {
+    setEstado(0);
+  });
 
   return (
     <>
       <h1>Funciona</h1>
-      <button onClick={addBtn}>Adciona</button>
-      <button onClick={removeBtn}>Remove</button>
-      <h2>{cont}</h2>
+      <button onClick={addBtn}>Adcionar</button>
+      <button onClick={removeBtn}>Remover</button>
+      <button onClick={resetBtn}>Resetar</button>
+      <h2>{estado}</h2>
     </>
   );
 }
