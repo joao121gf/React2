@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React2/static/css/main.959a6356.css",
+    "main.js": "/React2/static/js/main.e9cc5189.js",
+    "static/media/background-desktop.png": "/React2/static/media/background-desktop.aaca402b029d6080d68d.png",
+    "index.html": "/React2/index.html",
+    "main.959a6356.css.map": "/React2/static/css/main.959a6356.css.map",
+    "main.e9cc5189.js.map": "/React2/static/js/main.e9cc5189.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.959a6356.css",
+    "static/js/main.e9cc5189.js"
+  ]
+}
